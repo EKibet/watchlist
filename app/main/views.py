@@ -102,7 +102,7 @@ def new_review(id):
     form = ReviewForm()
     movie = get_movie(id)
     if form.validate_on_submit():
-        title = form.title.data
+        tit  le = form.title.data
         review = form.review.data
 
         # Updated review instance

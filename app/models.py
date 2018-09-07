@@ -60,7 +60,7 @@ class User(UserMixin, db.Model):
     bio = db.Column(db.String(255))
     profile_pic_path = db.Column(db.String())
     reviews = db.relationship('Review',backref = 'user',lazy = "dynamic")
-
+    
 
     @property
     def password(self):
